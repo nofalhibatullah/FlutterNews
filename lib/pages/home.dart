@@ -212,7 +212,7 @@ class _HomeState extends State<Home> {
                       child: ListView.builder(
                           shrinkWrap: true,
                           physics: const ClampingScrollPhysics(),
-                          itemCount: articles.length,
+                          itemCount:  10,
                           itemBuilder: (context, index) {
                             return BlogTile(
                               title: articles[index].title!,
@@ -298,7 +298,7 @@ class CategoryTile extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(6),
-              child: Image.network(
+              child: Image.asset(
                 imageUrl,
                 width: 120,
                 height: 70,
